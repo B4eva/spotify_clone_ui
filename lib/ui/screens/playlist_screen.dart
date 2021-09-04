@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_ui/data/data.dart';
+import 'package:spotify_ui/ui/widgets/app_bar.dart';
 import 'package:spotify_ui/ui/widgets/widgets.dart';
 
 class PlaylistScreen extends StatefulWidget {
@@ -113,6 +114,7 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
               padding:
                   const EdgeInsets.symmetric(horizontal: 20.0, vertical: 60.0),
               children: <Widget>[
+                // buildAppBar(),
                 PlaylistHeader(playlist: widget.playlist),
                 TracksList(tracks: widget.playlist!.songs),
               ],

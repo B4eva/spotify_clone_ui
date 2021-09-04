@@ -19,7 +19,7 @@ class CurrentTrack extends StatelessWidget {
             const Spacer(),
             _PlayerControls(),
             const Spacer(),
-            _MoreControls(),
+            if (MediaQuery.of(context).size.width > 800) _MoreControls(),
           ],
         ),
       ),
