@@ -15,7 +15,6 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _scrollController = ScrollController();
   }
@@ -113,7 +112,10 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
               controller: _scrollController,
               padding:
                   const EdgeInsets.symmetric(horizontal: 20.0, vertical: 60.0),
-              children: <Widget>[PlaylistHeader(playlist: widget.playlist)],
+              children: <Widget>[
+                PlaylistHeader(playlist: widget.playlist),
+                TracksList(tracks: widget.playlist!.songs),
+              ],
             ),
           )),
     );

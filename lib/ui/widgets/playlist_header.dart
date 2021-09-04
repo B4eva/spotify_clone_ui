@@ -23,13 +23,8 @@ class PlaylistHeader extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      'playlist'.toUpperCase(),
-                      style: Theme.of(context)
-                          .textTheme
-                          .overline!
-                          .copyWith(fontSize: 12.0),
-                    ),
+                    Text('playlist'.toUpperCase(),
+                        style: TextStyle(color: Colors.white)),
                     SizedBox(
                       height: 12.0,
                     ),
